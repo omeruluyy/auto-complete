@@ -5,9 +5,64 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: bisque;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+*{
+  padding:0 ;
+  margin: 0;
+  list-style: none;
+  border: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  outline: 0;
+}
+
+.search{
+  width: 500px;
+  margin: 20px auto;
+ 
+}
+.search input{
+  width: 100%;
+  height: 50px;
+  border-radius: 10px;
+  font-size: 20px;
+  padding: 0 15px;
+}
+
+.search .search-result{
+  left:0;
+  width: 100%;
+  border-radius: 0 0 5px 5px;
+  background-color: #fff;
+  max-height: 300px;
+  overflow: auto;
+}
+
+.search .search-result .search-result-item{
+  padding: 2px 15px;
+  height: 70px;
+  display: flex;
+  cursor: pointer;
+  font-weight: bold;
+}
+.search .search-result .search-result-item:hover{
+ background-color: antiquewhite;
+}
+
+.search .search-result .search-result-item img{
+ height:60px;
+ margin-left: 15px;
+}
+
+.search .search-result .search-result-item .itemid{
+  font-size: 12px;
+  padding-top: 5px;
+  color: #999;
+ }
